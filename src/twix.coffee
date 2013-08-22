@@ -28,7 +28,7 @@ makeTwix = (moment) ->
         slot: 1
         pre: " "
       allDayMonth:
-        fn: (options) -> (date) -> date.format "#{options.monthFormat} #{options.dayFormat}"
+        fn: (options) -> (date) -> date.format "#{options.dayFormat} #{options.monthFormat}"
         slot: 2
         pre: " "
       month:
