@@ -42,7 +42,7 @@ makeTwix = (moment) ->
       year:
         fn: (options) -> (date) -> date.format options.yearFormat
         slot: 4
-        pre: ", "
+        pre: " "
       time:
         fn: (options) -> (date) ->
           str = if date.minutes() == 0 && options.implicitMinutes && !options.twentyFourHour
@@ -55,7 +55,7 @@ makeTwix = (moment) ->
             str += date.format options.meridiemFormat
           str
         slot: 5
-        pre: ", "
+        pre: " "
       meridiem:
         fn: (options) -> (t) => t.format options.meridiemFormat
         slot: 6
